@@ -9,7 +9,12 @@
 import UIKit
 
 class IngredientTableViewCell: UITableViewCell {
-
+    // MARK: Properties
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIView!
+    @IBOutlet weak var countField: UITextField!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

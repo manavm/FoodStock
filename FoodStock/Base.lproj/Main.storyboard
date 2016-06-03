@@ -55,6 +55,11 @@
                                         </textField>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="countField" destination="tAK-Yk-V0t" id="LUd-1W-QAC"/>
+                                    <outlet property="nameLabel" destination="PjS-er-ya5" id="89N-BE-F5d"/>
+                                    <outlet property="photoImageView" destination="ksx-hX-PIl" id="PLQ-mF-YZJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
