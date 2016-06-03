@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BAE03A2A25C2122FA6DFBA953A27BF1F1EC449B6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "BAE03A2A25C2122FA6DFBA953A27BF1F1EC449B6" : 0,
+    "4347601CA9865F55DA79B7CAB5B72CD9128FA60B" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F93DC58D-4E63-4F30-ADB0-CC00773A9D22",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "BAE03A2A25C2122FA6DFBA953A27BF1F1EC449B6" : "FoodStock\/",
+    "4347601CA9865F55DA79B7CAB5B72CD9128FA60B" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "FoodStock",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "FoodStock.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manavm\/magic-box.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4347601CA9865F55DA79B7CAB5B72CD9128FA60B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/manavm\/FoodStock.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BAE03A2A25C2122FA6DFBA953A27BF1F1EC449B6"
+    }
+  ]
+}
