@@ -16,6 +16,7 @@
 		71776DB51D00B30C000DD700 /* FoodStockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776DB41D00B30C000DD700 /* FoodStockUITests.swift */; };
 		71776DC31D00BD32000DD700 /* IngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776DC21D00BD32000DD700 /* IngredientTableViewCell.swift */; };
 		71776DC51D0235DE000DD700 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776DC41D0235DE000DD700 /* Ingredient.swift */; };
+		71776DC91D029AE1000DD700 /* ingredientTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776DC81D029AE1000DD700 /* ingredientTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		71776DB61D00B30C000DD700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71776DC21D00BD32000DD700 /* IngredientTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientTableViewCell.swift; sourceTree = "<group>"; };
 		71776DC41D0235DE000DD700 /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		71776DC81D029AE1000DD700 /* ingredientTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ingredientTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				71776D941D00B30C000DD700 /* AppDelegate.swift */,
 				71776D961D00B30C000DD700 /* ViewController.swift */,
 				71776D981D00B30C000DD700 /* Main.storyboard */,
+				71776DC81D029AE1000DD700 /* ingredientTableViewController.swift */,
 				71776DC41D0235DE000DD700 /* Ingredient.swift */,
 				71776DC21D00BD32000DD700 /* IngredientTableViewCell.swift */,
 				71776D9B1D00B30C000DD700 /* Assets.xcassets */,
@@ -269,6 +272,7 @@
 				71776D971D00B30C000DD700 /* ViewController.swift in Sources */,
 				71776D951D00B30C000DD700 /* AppDelegate.swift in Sources */,
 				71776DC31D00BD32000DD700 /* IngredientTableViewCell.swift in Sources */,
+				71776DC91D029AE1000DD700 /* ingredientTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,12 +17,12 @@ class Ingredient {
     
     // MARK: Initialization
     
-    init?(name:String, photo: UIImage, count: Int){
+    init?(name:String, photo: UIImage?, count: Int){
         self.name = name
         self.photo = photo
         self.count = count
     
-        if name.isEmpty{
+        if name.isEmpty || count < 0{
             return nil
         }
     }
