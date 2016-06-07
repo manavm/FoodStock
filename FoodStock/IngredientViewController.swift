@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  IngredientViewController.swift
 //  FoodStock
 //
 //  Created by Manav Mandhani on 6/2/16.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class IngredientViewController: UIViewController, UITextFieldDelegate {
 
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var ingredientNameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -33,7 +32,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        ingredientNameLabel.text = textField.text
     }
 }
 

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Ingredient View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodStock" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IngredientViewController" customModule="FoodStock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,12 +22,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ingredient Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0c-dd-aGT">
-                                <rect key="frame" x="20" y="62" width="155" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3c-MP-ycC">
                                 <rect key="frame" x="20" y="129" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
@@ -36,7 +30,6 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="ingredientNameLabel" destination="I0c-dd-aGT" id="TEr-Pn-sRb"/>
                         <outlet property="nameTextField" destination="LHd-be-ZHf" id="ZqG-qp-eZK"/>
                     </connections>
                 </viewController>
@@ -44,10 +37,10 @@
             </objects>
             <point key="canvasLocation" x="469" y="329"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Ingredient Table View Controller-->
         <scene sceneID="9YT-BJ-9kl">
             <objects>
-                <tableViewController id="PuX-VB-YAV" sceneMemberID="viewController">
+                <tableViewController id="PuX-VB-YAV" customClass="ingredientTableViewController" customModule="FoodStock" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="F9p-8f-Ce8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +57,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="78" height="74.5"/>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjS-er-ya5">
-                                            <rect key="frame" x="86" y="8" width="42" height="21"/>
+                                            <rect key="frame" x="86" y="8" width="462" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -79,7 +72,7 @@
                                 <connections>
                                     <outlet property="countField" destination="tAK-Yk-V0t" id="LUd-1W-QAC"/>
                                     <outlet property="nameLabel" destination="PjS-er-ya5" id="89N-BE-F5d"/>
-                                    <outlet property="photoImageView" destination="ksx-hX-PIl" id="PLQ-mF-YZJ"/>
+                                    <outlet property="photoImageView" destination="Co6-qf-e2k" id="mvJ-Lh-vSj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

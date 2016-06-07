@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71776D951D00B30C000DD700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776D941D00B30C000DD700 /* AppDelegate.swift */; };
-		71776D971D00B30C000DD700 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776D961D00B30C000DD700 /* ViewController.swift */; };
+		71776D971D00B30C000DD700 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71776D961D00B30C000DD700 /* IngredientViewController.swift */; };
 		71776D9A1D00B30C000DD700 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71776D981D00B30C000DD700 /* Main.storyboard */; };
 		71776D9C1D00B30C000DD700 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71776D9B1D00B30C000DD700 /* Assets.xcassets */; };
 		71776D9F1D00B30C000DD700 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71776D9D1D00B30C000DD700 /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		71776D911D00B30C000DD700 /* FoodStock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodStock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71776D941D00B30C000DD700 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71776D961D00B30C000DD700 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71776D961D00B30C000DD700 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		71776D991D00B30C000DD700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71776D9B1D00B30C000DD700 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71776D9E1D00B30C000DD700 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				71776D941D00B30C000DD700 /* AppDelegate.swift */,
-				71776D961D00B30C000DD700 /* ViewController.swift */,
+				71776D961D00B30C000DD700 /* IngredientViewController.swift */,
 				71776D981D00B30C000DD700 /* Main.storyboard */,
 				71776DC81D029AE1000DD700 /* ingredientTableViewController.swift */,
 				71776DC41D0235DE000DD700 /* Ingredient.swift */,
@@ -269,7 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71776DC51D0235DE000DD700 /* Ingredient.swift in Sources */,
-				71776D971D00B30C000DD700 /* ViewController.swift in Sources */,
+				71776D971D00B30C000DD700 /* IngredientViewController.swift in Sources */,
 				71776D951D00B30C000DD700 /* AppDelegate.swift in Sources */,
 				71776DC31D00BD32000DD700 /* IngredientTableViewCell.swift in Sources */,
 				71776DC91D029AE1000DD700 /* ingredientTableViewController.swift in Sources */,
@@ -497,6 +497,7 @@
 				71776DBB1D00B30C000DD700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71776DBC1D00B30C000DD700 /* Build configuration list for PBXNativeTarget "FoodStockTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				71776DBE1D00B30C000DD700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71776DBF1D00B30C000DD700 /* Build configuration list for PBXNativeTarget "FoodStockUITests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +515,7 @@
 				71776DC11D00B30C000DD700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
