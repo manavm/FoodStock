@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PuX-VB-YAV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Tas-H5-sgn">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Ingredient View Controller-->
+        <!--New Ingredient-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="IngredientViewController" customModule="FoodStock" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,15 +30,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="New Ingredient" id="qjD-P1-5kB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="1Hn-Aw-yeL"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="e8C-HB-Oag"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameTextField" destination="LHd-be-ZHf" id="ZqG-qp-eZK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="469" y="329"/>
+            <point key="canvasLocation" x="2093" y="329"/>
         </scene>
-        <!--Ingredient Table View Controller-->
+        <!--Inventory-->
         <scene sceneID="9YT-BJ-9kl">
             <objects>
                 <tableViewController id="PuX-VB-YAV" customClass="ingredientTableViewController" customModule="FoodStock" customModuleProvider="target" sceneMemberID="viewController">
@@ -47,7 +52,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IngredientTableViewCell" rowHeight="75" id="24I-f5-gHE" customClass="IngredientTableViewCell" customModule="FoodStock" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="600" height="75"/>
+                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="24I-f5-gHE" id="ksx-hX-PIl">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
@@ -62,12 +67,24 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-Yk-V0t">
-                                            <rect key="frame" x="561" y="23" width="31" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAK-Yk-V0t">
+                                            <rect key="frame" x="544" y="23" width="31" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="tAK-Yk-V0t" firstAttribute="top" secondItem="ksx-hX-PIl" secondAttribute="topMargin" constant="15" id="2X2-QB-xft"/>
+                                        <constraint firstItem="tAK-Yk-V0t" firstAttribute="top" secondItem="ksx-hX-PIl" secondAttribute="topMargin" constant="15" id="VjD-yw-scc"/>
+                                        <constraint firstItem="tAK-Yk-V0t" firstAttribute="centerX" secondItem="ksx-hX-PIl" secondAttribute="centerX" id="hzk-zq-DVe"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="tAK-Yk-V0t" secondAttribute="trailing" id="jhz-Gc-BDs"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="2X2-QB-xft"/>
+                                            <exclude reference="hzk-zq-DVe"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="countField" destination="tAK-Yk-V0t" id="LUd-1W-QAC"/>
@@ -81,10 +98,53 @@
                             <outlet property="delegate" destination="PuX-VB-YAV" id="uPZ-j9-9gJ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Inventory" id="7gH-Wr-FSe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="w3n-Ur-NhU">
+                            <connections>
+                                <segue destination="SfI-sL-hmr" kind="modal" identifier="AddItem" id="V20-6y-Kk3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mNl-8V-X8Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="631" y="341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vCR-dy-CKA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Tas-H5-sgn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Px-pL-iyx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PuX-VB-YAV" kind="relationship" relationship="rootViewController" id="v4E-c3-51s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfc-Dk-QeT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-181" y="341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xlH-2p-4AU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SfI-sL-hmr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2VW-r7-Qjl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pS9-fP-5OF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xnH-yi-LME" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1281" y="329"/>
         </scene>
     </scenes>
 </document>
